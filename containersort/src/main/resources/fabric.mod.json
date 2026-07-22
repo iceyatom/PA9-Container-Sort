@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "containersort",
+	"version": "${version}",
+	"name": "ContainerSort",
+	"description": "One-click alphabetical sorting for chests, barrels, and shulker boxes.",
+	"authors": [
+		"iceyatom"
+	],
+	"contact": {},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.iceyatom.containersort.client.ContainerSortClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "containersort.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": ">=0.155.2"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"key.containersort.sort": "Sort Open Container",
+	"containersort.button.label": "A-Z",
+	"containersort.button.tooltip": "Sort Items (A–Z)",
+	"containersort.message.sorting": "Sorting container…",
+	"containersort.message.undoing": "Restoring pre-sort arrangement…",
+	"containersort.message.reloaded": "ContainerSort config reloaded",
+	"containersort.message.no_container": "Open a supported container first"
+}

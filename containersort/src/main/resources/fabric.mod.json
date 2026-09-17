@@ -2,13 +2,16 @@
 	"schemaVersion": 1,
 	"id": "containersort",
 	"version": "${version}",
-	"name": "ContainerSort",
+	"name": "PA9 Container Sort",
 	"description": "One-click alphabetical sorting for chests, barrels, and shulker boxes.",
 	"authors": [
-		"iceyatom"
+		"PersonalAtom9"
 	],
-	"contact": {},
+	"contact": {
+		"homepage": "https://www.youtube.com/@PersonalAtom9"
+	},
 	"license": "MIT",
+	"icon": "icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"client": [

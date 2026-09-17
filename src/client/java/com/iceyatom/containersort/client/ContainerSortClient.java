@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import com.iceyatom.containersort.client.config.ContainerSortConfig;
 import com.iceyatom.containersort.client.sort.SortExecutor;
 import com.iceyatom.containersort.client.sort.SortManager;
+import com.mojang.blaze3d.platform.InputConstants;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
@@ -37,7 +38,7 @@ public class ContainerSortClient implements ClientModInitializer {
 		ModConflicts.detect();
 
 		sortKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-				"key.containersort.sort", -1, KeyMapping.Category.INVENTORY));
+				"key.containersort.sort", InputConstants.UNKNOWN.getValue(), KeyMapping.Category.INVENTORY));
 
 		// Drives in-flight click sequences and abort-on-close detection (FR-18, PKT-03).
 		ClientTickEvents.END_CLIENT_TICK.register(SortExecutor::tick);
